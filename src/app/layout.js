@@ -6,8 +6,8 @@ import Footer from '@/components/footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Moonrise',
-  description: 'Moonrise website',
+  title: 'Moonrise - Professional Makeup Services',
+  description: 'Professional makeup services for all occasions',
 }
 
 export default function RootLayout({ children }) {
@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <Navigation />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
